@@ -32,6 +32,7 @@ print( switch.keys() )
 print( "Fifth test - .values()" )
 print( switch.values() )
 
+# "del" can also be used
 print( "Sixth test - .pop()" )
 switch.pop("version") # removes this key (and value) pair
 print( switch.keys() )   # notice the value of version is gone
