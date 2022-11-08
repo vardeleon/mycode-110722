@@ -8,7 +8,10 @@ def main():
     # chang dir
     os.chdir('/home/student/mycode-110722/')
 
-    # move file
+    # move file from the last run
+    shutil.move('ceph_storage/raynor.obj', '/home/student/mycode-110722/')
+
+    # move file back
     shutil.move('raynor.obj', 'ceph_storage/')
 
     # user input
