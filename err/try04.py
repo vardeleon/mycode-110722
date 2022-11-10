@@ -15,8 +15,10 @@ try: # try to do this
         switchconfig = configfileobj.read()
 except: # if any errors occurred
     x = 'General error with obtaining configuration file!'
+    print(x, configfile)
 else: # if there were no errors
     x = 'Switch config file found.'
+    print("using config file: ", configfile)
 finally: # in all cases, write out what happened to a log file
     with open("try04.log", "a") as zlog:
         print('\n\nWriting results of routine to log file')
